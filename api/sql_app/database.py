@@ -15,7 +15,6 @@ SQLALCHEMY_DATABASE_URL = f"mysql://{customer}:{password}@{host}:{port}/{databas
 
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL, 
-    echo=True,
     pool_pre_ping=True
 )
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)

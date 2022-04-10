@@ -32,21 +32,12 @@ If Docker is running successfully, the API and DB server will be launched as sho
 
 *Be careful, it won't work if the port is occupied by another application.*
 
-If you want to check docker is actually working, then you can check it with following command:
-
-```bash
-docker ps
-```
-
-If you want to go inside of docker container, then try to use following command:
-
-```bash
-docker-compose exec mysql bash
-docker-compose exec api bash
-```
+A summary of all end-points ca be seen in the Swagger UI under
+- FastAPI - Swagger UI : http://localhost:8000/docs
 
 For shutdown of the docker instance, please use following command:
 
 ```bash
 docker-compose down
 ```
+
